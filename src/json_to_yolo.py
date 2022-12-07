@@ -69,10 +69,11 @@ def convert_annotation(json_dir,destination_dir):
             outfile.write(str(class_id)+" "+" ".join([str(a) for a in bb]) + '\n')
         outfile.close()
 
-
-convert_annotation('../pidray/annotations/xray_test_hard.json', '../pidray/anno_yolo/hard')
-convert_annotation('../pidray/annotations/xray_test_easy.json', '../pidray/anno_yolo/easy')
-convert_annotation('../pidray/annotations/xray_train.json', '../pidray/anno_yolo/train')
-convert_annotation('../pidray/annotations/xray_test_hidden.json', '../pidray/anno_yolo/hidden')
-
+#%% 
+convert_annotation('../pidray/annotations/xray_test_hard.json', '../pidray/anno_yolo/hard/')
+#%% 
+convert_annotation('../pidray/annotations/xray_test_easy.json', '../pidray/anno_yolo/easy/')
+#%%
+convert_annotation('../pidray/annotations/xray_train.json', '../pidray/anno_yolo/train/')
+convert_annotation('../pidray/annotations/xray_test_hidden.json', '../pidray/anno_yolo/hidden/')
 

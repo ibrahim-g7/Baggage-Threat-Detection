@@ -23,11 +23,20 @@ hidden_dir = '../data/hidden'
 
 def resize(f, dest):
     for file in os.listdir(f):
-        f_img = dest+"/"+file
+        f_img = f+"/"+file
         img = Image.open(f_img)
-        img = img.resize((2296,1724))
-        img.save(f_img)
+        img = img.resize((448,448))
+        img.save(dest+"/"+file)
 
 
 # %%
 resize(hard_test_dir, hard_dir)
+# %%
+resize(easy_test_dir,easy_dir)
+
+# %%
+resize(hidden_test_dir,hidden_dir)
+
+# %%
+resize(train_dir,training_dir)
+# %%

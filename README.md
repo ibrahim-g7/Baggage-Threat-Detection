@@ -1,5 +1,9 @@
-[!alt text](./images/CTiX-CT-TSA.jpg)
+![alt text](./images/CTiX-CT-TSA.jpg)
 # MISK Data Science Program
+
+* [Slide](https://docs.google.com/presentation/d/1q3doLNy-2cXDUia56dEooTAE0ZSozYakfhx7RAyapzI/edit#slide=id.g1b821f873c6_15_23)
+* [Google Colab notebook](./src/google_colab_notebook.ipynb)
+* [Local notebook](./src/notebook.ipynb)
 
 # Overview
 Airport security sand safety may refer to the detection of unsafe object and materials passenger's baggage. The detection of threat object using X-ray luggage scan images is big part of avitation security.
@@ -36,7 +40,7 @@ python detect.py --weight runs/train/baggage_screening/weights/best.pt --img 640
 ```bash
 yolov5/runs/train/detect/exp/
 ```
-6 If you run the command multiple times, it will make new folder with name exp1, exp2, etc.
+6. If you run the command multiple times, it will make new folder with name exp1, exp2, etc.
 # Referances
 1. [YOLO paper](https://arxiv.org/pdf/1506.02640.pdf)
 2. [Dataset paper](https://arxiv.org/pdf/2108.07020.pdf )
